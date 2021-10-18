@@ -1,13 +1,16 @@
-use crate::handle_errors::execute;
+use crate::iterator::execute;
 mod build_car;
 mod update_car;
 mod hashmap_car;
 mod handle_errors;
+mod lifetimes;
+mod generic_type;
+mod iterator;
 
 use std::fs::File;
 use std::io::{Error, Read};
 use std::path::PathBuf;
-
+/*
 fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     let mut string = String::new();
 
@@ -40,4 +43,8 @@ fn main() {
     if read_file_contents(PathBuf::from("non-existent-file.txt")).is_err() {
         println!("The program reported an error for the file that doesn't exist.");
     }
+}
+*/
+fn main(){
+    execute();
 }
