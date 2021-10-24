@@ -6,6 +6,8 @@ mod handle_errors;
 mod lifetimes;
 mod generic_type;
 mod iterator;
+mod modules;
+mod unit_test;
 
 use std::fs::File;
 use std::io::{Error, Read};
